@@ -1,0 +1,29 @@
+{
+  "name": "daisy",
+  "version": "1.0.0",
+  "description": "Discord API wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScorprianDev/daisy.js.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "mira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScorprianDev/daisy.js/issues"
+  },
+  "homepage": "https://github.com/ScorprianDev/daisy.js#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "ws": "^8.4.2"
+  }
+}
