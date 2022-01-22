@@ -13,7 +13,7 @@ To connect to the gateway:
 const Daisy = require("./index");
 
 const bot = new Daisy({
-	token: "YOUR_BOT_TOKEN_HERE",
+    token: "YOUR_BOT_TOKEN_HERE",
     intents: 32509
 });
 
