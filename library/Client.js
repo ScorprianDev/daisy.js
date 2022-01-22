@@ -3,15 +3,18 @@ const Constants = require("./Constants");
 const WebSocketManager = require("./ws/WebSocketManager");
 
 class Client extends EventEmitter {
-	constructor(token, options) {
+	socket = new WebSocketManager(this);
+
+	constructor(options) {
 		super();
-		this.token = token;
 		this.options = Object.assign({
+			token: this.token,
 			intents: Constants.INTENTS.allNonPrivileged,
 		}, options);
 	}
+
 	connect() {
-		return new WebSocketManager(this.token, this.options).connect(); 
+		return this.socket.connect();
 	}
 }
 
