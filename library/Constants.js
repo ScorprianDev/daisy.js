@@ -1,5 +1,7 @@
+const LIBRARY_NAME = "Daisy";
+module.exports.LIBRARY_NAME = LIBRARY_NAME;
+
 module.exports = {
-	LIBRARY_NAME: "Daisy",
 	BASE_URL: "https://discord.com/api",
 	GATEWAY_VERSION: "9",
 	ENDPOINTS: {
@@ -68,4 +70,22 @@ module.exports.GatewayOPCodes = {
 	HEARTBEAT_ACK:         11,
 	SYNC_GUILD:            12,
 	SYNC_CALL:             13
+};
+
+module.exports.HEARTBEAT = {
+	op: 1,
+	d: null
+};
+
+module.exports.IDENTIFY = {
+	"op": 2,
+	"d": {
+		"token": "",
+		"intents": "",
+		"properties": {
+			"$os": "linux",
+			"$browser": LIBRARY_NAME,
+			"$device": LIBRARY_NAME
+		}
+	}
 };
